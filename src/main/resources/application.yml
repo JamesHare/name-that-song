@@ -1,0 +1,11 @@
+server:
+  port: 8085
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 30000
+        readTimeout: 30000
+        loggerLevel: BASIC
+name-that-song:
+  api-key: ${API_KEY_HERE}
