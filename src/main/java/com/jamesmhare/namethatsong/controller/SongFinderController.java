@@ -74,7 +74,7 @@ public class SongFinderController {
             model.addAttribute("success", false);
             model.addAttribute("messages", List.of("Oops. We couldn't find any words that rhyme with "
                     + rhymeSearchRequest.getWord() + ". Please try a different word."));
-            return "song-results-page";
+            return "rhyme-results-page";
         }
         model.addAttribute("success", true);
         model.addAttribute("messages", List.of("Looks like we found a match!"));
